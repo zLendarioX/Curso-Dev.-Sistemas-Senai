@@ -1,0 +1,213 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4; /* Fundo mais claro */
+    color: #333; /* Texto escuro para melhor contraste */
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #474747; /* Fundo branco */
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header .logo img {
+    height: 80px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white; /* Texto escuro */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #FFD700; /* Amarelo ao passar o mouse */
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('https://www.portalsolar.com.br/_next/image?url=https:%2F%2Finstitucional-and-info-production.s3.us-east-2.amazonaws.com%2Fimages%2Ff8ca6776-ab84-468c-94cb-3433312e0b36%2Fastronergy-fornecera-454-mw-em-paineis-solares-para-projeto-em-minas-gerais-POST.jpg&w=1920&q=100');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Overlay mais claro */
+}
+
+.hero .container {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    color: #ffffff; /* Texto branco */
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    color: #ffffff; /* Texto branco */
+}
+
+.hero .btn {
+    background-color: #FFD700;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: #333; /* Texto escuro */
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.hero .btn:hover {
+    background-color: #e6b800; /* Amarelo mais escuro ao passar o mouse */
+}
+
+/* Footer */
+footer {
+    background-color: #474747; /* Fundo branco */
+    color: white; /* Texto escuro */
+    padding: 40px 0;
+    border-top: 1px solid #e0e0e0; /* Borda clara */
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+footer .footer-section {
+    flex: 1;
+    padding: 20px;
+    min-width: 250px;
+}
+
+footer .footer-section h3 {
+    margin-bottom: 20px;
+    color: #FFD700; /* Amarelo para títulos */
+}
+
+footer .footer-section p {
+    margin-bottom: 20px;
+}
+
+footer .footer-section ul {
+    list-style: none;
+}
+
+footer .footer-section ul li {
+    margin-bottom: 10px;
+}
+
+footer .footer-section ul li a {
+    text-decoration: none;
+    color: white; /* Texto escuro */
+    transition: color 0.3s ease;
+}
+
+footer .footer-section ul li a:hover {
+    color: #FFD700; /* Amarelo ao passar o mouse */
+}
+
+footer .footer-section.contact ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+footer .footer-section.contact ul li i {
+    margin-right: 10px;
+    color: #FFD700; /* Amarelo para ícones */
+}
+
+footer .footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #e0e0e0; /* Borda clara */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav ul {
+        margin-top: 10px;
+    }
+
+    header nav ul li {
+        margin: 0 10px;
+    }
+
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    footer .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer .footer-section {
+        margin-bottom: 20px;
+    }
+}
