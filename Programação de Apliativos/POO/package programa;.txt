@@ -1,0 +1,20 @@
+package models;
+
+public class Funcionario {
+	private String nome = "Rafael Lima";
+	private double salrioBruto = 6000;
+	private double imposto = 1000.0;
+	
+	
+	public void LoadFuncionario() {
+		System.out.printf("Nome: %s\nSalrio: %.02f\nImposto: R$ %.02f\n", nome, salrioBruto, imposto);
+	}
+	public void salrioLiquido() {
+		System.out.printf("Funcionario: %s, Salario: R$ %.02f\n", nome, salrioBruto - imposto);
+	}
+	public void SalarioAumento(double p){
+		this.salrioBruto += salrioBruto* (p/100);
+		System.out.printf("Dados atualizados: Funcionario: %s, Salario: R$ %.02f\n", nome, salrioBruto - imposto);
+		
+	}
+}

@@ -1,0 +1,27 @@
+package models;
+
+import java.util.Objects;
+
+public class product {
+	private String nome;
+	private double price;
+	private int quant;
+	
+	public product() {
+		super();
+		this.nome = "Açucar";
+		this.price = 18.25;
+		this.quant = 10;
+	}
+	public void addProduct(int quant) {
+		this.quant += quant;
+		
+	}
+	public void RemoveProduct(int quant) {
+		this.quant -= quant;
+	}
+	public void LoadProduct() {
+		 System.out.printf("Nome: %s\nEstoque: %d\nValor: %.02f\n", nome, quant, price);
+	}
+	
+}
